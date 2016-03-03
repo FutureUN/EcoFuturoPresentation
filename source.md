@@ -31,7 +31,7 @@ H:
  1. Introducción <!-- .element: class="fragment" data-fragment-index="1"-->
  1. Descripción del Problema <!-- .element: class="fragment" data-fragment-index="2"-->
  1. Diagrama E/R <!-- .element: class="fragment" data-fragment-index="3"-->
- 
+ 1. Diccionario <!-- .element: class="fragment" data-fragment-index="4"--> 
 	
 H:
 
@@ -117,3 +117,9 @@ H:
 
  
  <iframe src="diagrama.pdf" style="width:750px; height:1000px;" frameborder="0"></iframe>
+
+H:
+<!-- .slide: data-background="#005050" -->
+##Diccionario
+ <iframe src="diccionario.pdf" style="width:750px; height:1000px;" frameborder="0"></iframe>
+
