@@ -110,10 +110,10 @@ V:
 
 
 >Se dispuso de un completo análisis para identificar sus relaciones, generando más entidades de las presentadas.
-<iframe src="diagrama.pdf" style="width:750px; height:1000px;" frameborder="0"></iframe>
+
 H: 
 <!-- .slide: data-background="#005050" -->
 ##Diagrama entidad Relación
 
  
-  <iframe src="diagrama.pdf" style="width:750px; height:1000px;" frameborder="0"></iframe>
+ <iframe src="diagrama.pdf" style="width:750px; height:1000px;" frameborder="0"></iframe>
