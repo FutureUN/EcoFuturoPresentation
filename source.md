@@ -121,5 +121,5 @@ H:
 H:
 <!-- .slide: data-background="#005050" -->
 ##Diccionario
- <iframe src="diccionario.pdf" style="width:750px; height:1000px;" frameborder="0"></iframe>
+ <iframe src="diccionario.pdf" style="width:750px; height:600px;" frameborder="0"></iframe>
 
