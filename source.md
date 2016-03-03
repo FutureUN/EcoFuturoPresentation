@@ -115,4 +115,7 @@ H:
 <!-- .slide: data-background="#005050" -->
 ##Diagrama entidad Relación
 
- <iframe src="css/diagrama.pdf" style="width:750px; height:1000px;" frameborder="0"></iframe>
+ <iframe src="diagrama.pdf" style="width:750px; height:1000px;" frameborder="0"></iframe>
+ 
+ 
+  <iframe src="diagrama.pdf" style="width:750px; height:1000px;" frameborder="0"></iframe>
