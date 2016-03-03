@@ -23,6 +23,11 @@ H:
 by  [Sebastian Chaves](https://github.com/adamantwharf) - [Laura Santos](https://github.com/lsfinite) - [Jimmy Pulido](https://github.com/jiapulidoar)
 
 H:
+<!-- .slide: data-background="#ffffff" --> 
+# Link presentación 
+>http://futureun.github.io/BDPresentacion/
+
+H:
 
 # Index
 
