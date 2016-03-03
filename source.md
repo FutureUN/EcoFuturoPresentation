@@ -100,7 +100,7 @@ Ambos con atributos específicos y comunes.
 
 V:
 
-##Identidades a identificar 
+##Entidades a identificar 
 
 * Producto y servicio. 
 * Cliente.
