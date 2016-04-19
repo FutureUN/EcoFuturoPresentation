@@ -18,7 +18,7 @@
 
 H:
 
-# Avance 1 
+# Avance 2 
 
 by  [Sebastian Chaves](https://github.com/adamantwharf) - [Laura Santos](https://github.com/lsfinite) - [Jimmy Pulido](https://github.com/jiapulidoar)
 
@@ -33,89 +33,68 @@ H:
 
 <!-- .slide: data-background="#7E2121" --> 
 
- 1. Introducción <!-- .element: class="fragment" data-fragment-index="1"-->
- 1. Descripción del Problema <!-- .element: class="fragment" data-fragment-index="2"-->
+ 1. Centro de Estética <!-- .element: class="fragment" data-fragment-index="1"-->
+ 1. Usuarios y Perfiles de la base de datos <!-- .element: class="fragment" data-fragment-index="2"-->
  1. Diagrama E/R <!-- .element: class="fragment" data-fragment-index="3"-->
  1. Diccionario <!-- .element: class="fragment" data-fragment-index="4"--> 
 	
 H:
 
-# Introducción 
+# Centro de EStética
 <!-- .slide: data-background="#005050" -->
 V:
  
- ## Necesidad de una Base de datos
 
- Spa como eleccion de la entidad. <!-- .element: class="fragment" data-fragment-index="1"-->
-
- Habrá un acceso completo a la información (funcionamiento interno). <!-- .element: class="fragment" data-fragment-index="2"-->
-
- Existe interés de implementación completa por parte de la entidad. <!-- .element: class="fragment" data-fragment-index="3"--> 
-
-V:
-## Objetivo principal 
-
-
-  >Facilitar y mejorar el manejo interno de la información del Spa.  
-
-  Actualmente lo implementan por medio de una hoja de Cálculo. 
+ Base de datos para un centro de estética <!-- .element: class="fragment" data-fragment-index="1"-->
 
 
 
 H:
-# Descripción del Problema
+# Usuarios y Perfiles
 <!-- .slide: data-background="#7E2121"  -->
+Siguiendo las necesidades del centro de estética, consideramos oportuno dividir a los usuarios en las siguientes clasificaciones:
 V:
 
-## Problema 
+## Empleados: 
+>Los empleados, se dividirán en cuatro rangos de acceso según su cargo dentro del centro de estética:
 
-Diseñar una base de datos útil para un centro de estética. 
+* Peluqueros y esteticistas
+* Recepcionistas 
+* Gerente 
+* Mantenimiento
 
-Se pretende crear: 
-
-> Resgistro para consulta y análisis de datos que contribuirá a la toma de desiciones financieras. 
-
-
-V:
-
-##Contribuyendo a:
-
-* Facilitar actualizaciones (Clientes, proveedores, trabajadores, etc). 
-
-* Evitar la repetición de información. 
- 
-* Ahorro de recursos humanos. 
-
-* Mitigar el trabajo inneceario (Forma manual). 
-
-* Reducir el error. 
 
 V:
+## Peluqueros y esteticistas
 
-## Detalles específicos: 
+>Modificar datos personales, Consultas: Agenda de citas y Horario de trabajo.
+En el caso de Agendar citas tnedrá que consultar con el cliente y además deberá contar con un permiso dado por el recepcionista. 
 
-El centro de estérica consta de dos secciones: 
-Productos y servicios
+V:
+## Recepcionistas
+>Son los encargados de atender directamente al cliente y manejar la caja, tendrán acceso a su información, acceso completo a la agenda de citas e inventarios de los productos (venta y gasto de un producto).
 
-> 
-  * Venta de Productos
-  * Venta de Servicios 
+V:
+## Gerente 
+>Encargado de Administrar la estética en general, el acceso a la base de datos será de tipo administrador. Será quien registre las transacciones con los proveedores y la parte contable. Manejará los horarios de los empleados. 
 
-Ambos con atributos específicos y comunes.
+V:
+##Mantenimiento 
+>Encargados de los servicios de limpieza y mantenimineto, solo tendrán acceso para modificar y consultar sus datos personales. 
 
 V:
 
-##Entidades a identificar 
+##Clientes
 
-* Producto y servicio. 
-* Cliente.
-* Proveedor. 
-* Empleado. 
-* Protocolo (Procedimiento a seguir). 
+>Los clientes tendrán las posibilidad de:
+
+*Modificar sus datos personales
+*Cancelar citas programadas. 
+*Sus consultas pueden ser:
+	horario de trabajo de los empleados y su propia agenda de citas. 
 
 
->Se dispuso de un completo análisis para identificar sus relaciones, generando más entidades de las presentadas.
-
+```
 H: 
 <!-- .slide: data-background="#005050" -->
 ##Diagrama entidad Relación
@@ -127,4 +106,4 @@ H:
 <!-- .slide: data-background="#005050" -->
 ##Diccionario
  <iframe src="diccionario.pdf" style="width:750px; height:600px;" frameborder="0"></iframe>
-
+```
