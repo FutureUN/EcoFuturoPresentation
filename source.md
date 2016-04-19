@@ -74,9 +74,9 @@ V:
 ## Recepcionistas
 >Son los encargados de atender directamente al cliente y manejar la caja, tendrán acceso a: 
 
-*Su información
-*Acceso completo a la agenda de citas
-*Inventarios de los productos (venta y gasto de un producto).
+* Su información
+* Acceso completo a la agenda de citas
+* Inventarios de los productos (venta y gasto de un producto).
 
 V:
 ## Gerente 
