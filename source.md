@@ -35,8 +35,8 @@ H:
 
  1. Centro de Estética <!-- .element: class="fragment" data-fragment-index="1"-->
  1. Usuarios y Perfiles de la base de datos <!-- .element: class="fragment" data-fragment-index="2"-->
- 1. Diagrama E/R <!-- .element: class="fragment" data-fragment-index="3"-->
- 1. Diccionario <!-- .element: class="fragment" data-fragment-index="4"--> 
+ 1. Consultas <!-- .element: class="fragment" data-fragment-index="3"-->
+ 
 	
 H:
 
@@ -72,7 +72,11 @@ En el caso de Agendar citas tnedrá que consultar con el cliente y además deber
 
 V:
 ## Recepcionistas
->Son los encargados de atender directamente al cliente y manejar la caja, tendrán acceso a su información, acceso completo a la agenda de citas e inventarios de los productos (venta y gasto de un producto).
+>Son los encargados de atender directamente al cliente y manejar la caja, tendrán acceso a: 
+
+*Su información
+*Acceso completo a la agenda de citas
+*Inventarios de los productos (venta y gasto de un producto).
 
 V:
 ## Gerente 
