@@ -42,10 +42,8 @@ H:
 
 # Centro de EStética
 <!-- .slide: data-background="#005050" -->
-V:
- 
 
- Base de datos para un centro de estética <!-- .element: class="fragment" data-fragment-index="1"-->
+Base de datos para un centro de estética <!-- .element: class="fragment" data-fragment-index="1"-->
 
 
 
@@ -67,8 +65,12 @@ V:
 V:
 ## Peluqueros y esteticistas
 
->Modificar datos personales, Consultas: Agenda de citas y Horario de trabajo.
-En el caso de Agendar citas tnedrá que consultar con el cliente y además deberá contar con un permiso dado por el recepcionista. 
+Tendrán acceso a:
+
+* Modificar datos personales
+* Consultas: Agenda de citas y Horario de trabajo.
+
+>En el caso de Agendar citas tnedrá que consultar con el cliente y además deberá contar con un permiso dado por el recepcionista. 
 
 V:
 ## Recepcionistas
@@ -80,7 +82,10 @@ V:
 
 V:
 ## Gerente 
->Encargado de Administrar la estética en general, el acceso a la base de datos será de tipo administrador. Será quien registre las transacciones con los proveedores y la parte contable. Manejará los horarios de los empleados. 
+>Encargado de Administrar la estética en general, el acceso a la base de datos será de tipo administrador.
+
+* Será quien registre las transacciones con los proveedores y la parte contable. 
+* Manejará los horarios de los empleados. 
 
 V:
 ##Mantenimiento 
