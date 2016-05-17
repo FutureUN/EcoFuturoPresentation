@@ -18,12 +18,9 @@
 
 H:
 
-# Avance 2 
-
-by  [Sebastian Chaves](https://github.com/adamantwharf) - [Laura Santos](https://github.com/lsfinite) - [Jimmy Pulido](https://github.com/jiapulidoar)
-
-H:
+# Avance 3
 <!-- .slide: data-background="#ffffff" --> 
+by  [Sebastian Chaves](https://github.com/adamantwharf) - [Laura Santos](https://github.com/lsfinite) - [Jimmy Pulido](https://github.com/jiapulidoar)
 # Link presentación 
 >http://futureun.github.io/BDPresentacion/
 
@@ -34,8 +31,8 @@ H:
 <!-- .slide: data-background="#7E2121" --> 
 
  1. Centro de Estética <!-- .element: class="fragment" data-fragment-index="1"-->
- 1. Usuarios y Perfiles de la base de datos <!-- .element: class="fragment" data-fragment-index="2"-->
- 1. Consultas <!-- .element: class="fragment" data-fragment-index="3"-->
+ 1. Usuarios y permisos  <!-- .element: class="fragment" data-fragment-index="2"-->
+ 1. Vistas, Pa, Triggers  <!-- .element: class="fragment" data-fragment-index="3"-->
  
 	
 H:
@@ -48,7 +45,7 @@ Base de datos para un centro de estética <!-- .element: class="fragment" data-f
 
 
 H:
-# Usuarios y Perfiles
+# Usuarios y permisos 
 <!-- .slide: data-background="#7E2121"  -->
 Siguiendo las necesidades del centro de estética, consideramos oportuno dividir a los usuarios en las siguientes clasificaciones:
 V:
