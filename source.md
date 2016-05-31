@@ -33,7 +33,7 @@ H:
  1. Centro de Estética <!-- .element: class="fragment" data-fragment-index="1"-->
  1. Usuarios y permisos  <!-- .element: class="fragment" data-fragment-index="2"-->
  1. Vistas, Pa, Triggers  <!-- .element: class="fragment" data-fragment-index="3"-->
- 
+ 2. transacciones, cursores <!-- .element: class="fragment" data-fragment-index="4"-->
 	
 H:
 
@@ -43,6 +43,17 @@ H:
 Base de datos para un centro de estética <!-- .element: class="fragment" data-fragment-index="1"-->
 
 
+H: 
+<!-- .slide: data-background="#005050" -->
+##Diagrama entidad Relación
+
+ 
+ <iframe src="diagrama.pdf" style="width:750px; height:600px;" frameborder="0"></iframe>
+
+H:
+<!-- .slide: data-background="#005050" -->
+##Diccionario
+ <iframe src="diccionario.pdf" style="width:750px; height:600px;" frameborder="0"></iframe>
 
 H:
 # Usuarios y permisos 
@@ -148,14 +159,56 @@ DELIMITER ;
 -->
 ```
 H: 
-<!-- .slide: data-background="#005050" -->
-##Diagrama entidad Relación
-
- 
- <iframe src="diagrama.pdf" style="width:750px; height:600px;" frameborder="0"></iframe>
-
-H:
-<!-- .slide: data-background="#005050" -->
-##Diccionario
- <iframe src="diccionario.pdf" style="width:750px; height:600px;" frameborder="0"></iframe>
+## Transacciones
+Ejemplo: Verifica la legitimidad de la compra proveedor
+```java
+<!-- 
+DELIMITER $$ 
+  create procedure proc_transaccion_compraProv(id int, produ_id int , id_compraProv int , adq_precio int , fecha_ven date)
+  begin
+	declare estado_i double;
+	start transaction ;
+    set estado_i = ( select Tran_estado_final from Transaccion order by idTransaccion desc limit 1 );
+    INSERT INTO `estetica`.`Adquisicion` (`idAdquisicion`, `Producto_Pro_id`, `CompraProveedor_idCompraProveedor`, `adq_preciocompra`, `Fecha_Vencimiento`)
+    VALUES (id, produ_id, id_compraProv, adq_precio, fecha_ven);
+    if (adq_precio > estado_i) then
+		rollback;
+    else 
+		commit;
+    end if;    
+		
+  end$$
+delimiter ;
+-->
 ```
+V: 
+##Cursores 
+Ejemplo:  Determina los productos vencidos tomando como referencia la fecha actual, me muestra los resultados 
+```java
+<!--
+DELIMITER $$
+CREATE PROCEDURE det_vencimiento()
+	BEGIN
+	declare done INT DEFAULT 0;
+    declare fecha_ven date ;
+    declare id int default 0;
+	DECLARE det_venci cursor
+		for select fecha_vencimiento, idAdquisicion from Adquisicion;
+	Declare continue handler for sqlstate '02000' set done = 1;
+    open det_venci;
+	REPEAT
+	fetch det_venci into fecha_ven, id ;
+	if not done then
+		if fecha_ven < curdate() then 
+        update inventario set inventario.disponible = 0, inventario.estado = 'rojo' where
+         inventario.Adquisicion_idAdquisicion = id; 
+        end if;
+	end if;
+	until done END REPEAT;
+    select idInventario, Pro_nombre,adq_preciocompra, fecha_vencimiento from inventario join Adquisicion 
+    on ( Adquisicion_idAdquisicion = idAdquisicion) join Producto on (Producto_Pro_id= Pro_id) where estado like '%rojo%'; 
+	close det_venci; END$$ 
+DELIMITER ;
+-->
+```
+
