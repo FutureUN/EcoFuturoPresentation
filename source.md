@@ -18,10 +18,10 @@
 
 H:
 
-# Avance 3
+# Entrega final 
 <!-- .slide: data-background="#ffffff" --> 
 by  [Sebastian Chaves](https://github.com/adamantwharf) - [Laura Santos](https://github.com/lsfinite) - [Jimmy Pulido](https://github.com/jiapulidoar)
-# Link presentación 
+### Link presentación 
 >http://futureun.github.io/BDPresentacion/
 
 H:
@@ -99,6 +99,46 @@ V:
 *Sus consultas pueden ser:
 	horario de trabajo de los empleados y su propia agenda de citas. 
 
+H:
+## Vistas, PA, Triggers
+
+V: 
+## Triggers 
+Ejemplo:  Trigger que determina el valor acumulado de una compra al proveedor 
+>DELIMITER $$
+  CREATE TRIGGER trig_adquis before INSERT ON Adquisicion
+    FOR EACH ROW BEGIN
+    
+      declare sum_total int default 0;
+      declare sum_parcial int default 0;
+      set sum_parcial = (select CPRO_costo from CompraProveedor where 
+      CompraProveedor.idCompraProveedor = new.CompraProveedor_idCompraProveedor);
+      set sum_total = sum_parcial + new.adq_preciocompra;
+      update CompraProveedor set CPRO_costo = sum_total where 
+      CompraProveedor.idCompraProveedor = new.CompraProveedor_idCompraProveedor;
+     END$$
+DELIMITER ;
+
+V: 
+## Vistas 
+Ejemplo: Muestra la lista de ventas detalladas realizadas por los empleados 
+
+>Create view ventas_realizadas as select ven_id, ven_fecha, Ven_costo,cli_cc, concat(cli_nombre,' ',cli_apellido) 
+from Venta join Empleado on Ven_Emp_cc = Emp_cc join Cliente using (Cli_cc) where Emp_cc = (select user from mysql.user where user()=concat(mysql.user.user,"@",mysql.user.host)) ;
+
+
+V:
+## Procedimientos almacenados 
+Ejemplo: Procedimiento que determina, dado un producto, la cantidad total 
+>DELIMITER $$
+ CREATE PROCEDURE disponibilidad_produ(produ INT)
+   BEGIN
+     declare cantidad int default 0;
+     set cantidad = (select count(idAdquisicion) from producto join adquisicion on (Producto_Pro_id = Pro_id) 
+     join inventario on ( Adquisicion_idAdquisicion = idAdquisicion) where Pro_id = produ and disponible = 1);
+     select cantidad;
+   END $$
+DELIMITER ;
 
 ```
 H: 
