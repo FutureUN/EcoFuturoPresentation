@@ -105,7 +105,9 @@ H:
 V: 
 ## Triggers 
 Ejemplo:  Trigger que determina el valor acumulado de una compra al proveedor 
->DELIMITER $$
+```java
+<!-- 
+DELIMITER $$
   CREATE TRIGGER trig_adquis before INSERT ON Adquisicion
     FOR EACH ROW BEGIN
     
@@ -118,19 +120,23 @@ Ejemplo:  Trigger que determina el valor acumulado de una compra al proveedor
       CompraProveedor.idCompraProveedor = new.CompraProveedor_idCompraProveedor;
      END$$
 DELIMITER ;
-
+-->
+```
 V: 
 ## Vistas 
 Ejemplo: Muestra la lista de ventas detalladas realizadas por los empleados 
-
->Create view ventas_realizadas as select ven_id, ven_fecha, Ven_costo,cli_cc, concat(cli_nombre,' ',cli_apellido) 
+```java
+<!-- 
+Create view ventas_realizadas as select ven_id, ven_fecha, Ven_costo,cli_cc, concat(cli_nombre,' ',cli_apellido) 
 from Venta join Empleado on Ven_Emp_cc = Emp_cc join Cliente using (Cli_cc) where Emp_cc = (select user from mysql.user where user()=concat(mysql.user.user,"@",mysql.user.host)) ;
-
-
+-->
+```
 V:
 ## Procedimientos almacenados 
 Ejemplo: Procedimiento que determina, dado un producto, la cantidad total 
->DELIMITER $$
+```java
+<!-- 
+DELIMITER $$
  CREATE PROCEDURE disponibilidad_produ(produ INT)
    BEGIN
      declare cantidad int default 0;
@@ -139,7 +145,7 @@ Ejemplo: Procedimiento que determina, dado un producto, la cantidad total
      select cantidad;
    END $$
 DELIMITER ;
-
+-->
 ```
 H: 
 <!-- .slide: data-background="#005050" -->
