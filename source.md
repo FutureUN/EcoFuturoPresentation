@@ -113,6 +113,16 @@ V:
 H:
 ## Vistas, PA, Triggers
 
+V:
+## Tabla Permisos
+
+ <iframe src="permisos.pdf" style="width:750px; height:600px;" frameborder="0"></iframe>
+ 
+V: 
+## Tabla Vistas, Triggers y PA
+
+ <iframe src="triggers.pdf" style="width:750px; height:600px;" frameborder="0"></iframe>
+
 V: 
 ## Triggers 
 Ejemplo:  Trigger que determina el valor acumulado de una compra al proveedor 
