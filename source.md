@@ -51,7 +51,7 @@ H:
 V:
 
 
-<!-- .slide: data-background-image="/Images/colibri.jpg" -->
+<!-- .slide: data-background="/Images/colibri.jpg" -->
 
 
 <div style="background-color:#FFFFE6; text-align:center; vertical-align: middle; padding:2% 0;">
