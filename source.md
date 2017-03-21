@@ -33,11 +33,10 @@ H:
 <!-- .slide: data-background="#73c990" -->
 <section data-background-image="Images/flecha.gif" data-background-size="10%" data-background-position="bottom">
  1. Presentación del proyecto  <!-- .element: class="fragment" data-fragment-index="1"-->
- 1.  Historias de Usuario<!-- .element: class="fragment" data-fragment-index="2"-->
+ 1. Requisitos<!-- .element: class="fragment" data-fragment-index="2"-->
  1.  Casos de Uso  <!-- .element: class="fragment" data-fragment-index="3"-->
  2. Dieño OO <!-- .element: class="fragment" data-fragment-index="4"-->
  2. Patrones de Diseño <!-- .element: class="fragment" data-fragment-index="5"-->
- 2. Diagrama UML <!-- .element: class="fragment" data-fragment-index="6"-->
 
 H:
 
@@ -52,13 +51,41 @@ H:
 V:
 
 
-## Brieg Description
+<!-- .slide: data-background-image="/Images/colibri.jpg" -->
 
- <iframe src="diagrama.pdf" style="width:750px; height:600px;" frameborder="0"></iframe>
+
+<div style="background-color:#FFFFE6; text-align:center; vertical-align: middle; padding:2% 0;">
+<h3>Brieg Description</h3>
+
+Plataforma con el fin de promover y enseñar la cultura del reciclaje en Colombia. Reconocer y proteger nuestro espacio.
+</div>
+
+
+
+V:
+
+##Opportunity Alpha
+
+* En Colombia, en general, no existe un buen manejo de los residuos.
+* Permite a los mismos usuarios hacer un buen seguimiento de los residuos que generan.
+
+V:
+
+##Stakeholders Alpha  
+
+* Ciudadanía
+* UN
+* Empresas de reciclaje
+* Ministerio de ambiente y desarrollo sostenible
+
+V:
+
+## Team Alpha
+
 
 
 H:
-#Casos de Uso
+#Requisitos
 
 
 
@@ -113,3 +140,55 @@ Sistema de publicaciones, oferta y demanda de residuos.
 ecoUsuarios, Entidades.
 
 <img  src="Images/tienda.png" width="70%">  
+
+H:
+# Casos de Uso
+
+V:
+### Diagrama de casos de uso
+
+<!-- .slide: data-background="#73c990" -->
+<img src="Images/casosdeuso.png" >
+
+H:
+<!-- .slide: data-background-iframe="http://www.taringa.net" -->
+# Patrones de interfaz
+
+V:
+
+<!-- .slide: data-background-iframe="https://cristian1393.wixsite.com/ecofuturo" -->
+
+<div style="background-color:#FFFFFF; text-align:center; vertical-align: middle; padding:2% 0;">
+<p>- Icon Menu </p>
+ <p>- Search Box </p>
+<p>- Site </p>
+</div>
+
+V:
+
+<!-- .slide: data-background-image="/Images/mapas.png" -->
+
+<div style="background-color:#FFFFE6; text-align:center; vertical-align: middle; padding:2% 0;">
+<b>- Mapa Navigator </b>
+<p> Muestra en el mapa los puntos más cercanos.</p>
+</div>
+
+V:
+<!-- .slide: data-background-image="/Images/login.png" -->
+
+<div style="background-color:#FFFFA6; text-align:center; vertical-align: bottom; padding: 0 0;">
+<b>- Login </b>
+<p> Combination of an email-address and a password </p>
+</div>
+
+H:
+## Patrones de Diseño
+
+* Chain  of resposability
+* Strategy
+* Singleton
+
+
+H:
+## Diagrama de clases
+<img src="Images/diaclases.png" >
