@@ -158,7 +158,7 @@ V:
 
 <!-- .slide: data-background-iframe="https://cristian1393.wixsite.com/ecofuturo" -->
 
-<div style="background-color:#FFFFFF; text-align:center; vertical-align: middle; padding:2% 0;">
+<div style="background-color:#FFFFFF; text-align:center; vertical-align: middle; padding:0 0;">
 <p>- Icon Menu </p>
  <p>- Search Box </p>
 <p>- Site </p>
