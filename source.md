@@ -166,7 +166,7 @@ V:
 
 V:
 
-<!-- .slide: data-background-image="/Images/mapas.png" -->
+<!-- .slide: data-background-image="Images/mapas.png" -->
 
 <div style="background-color:#FFFFE6; text-align:center; vertical-align: middle; padding:2% 0;">
 <b>- Mapa Navigator </b>
@@ -174,7 +174,7 @@ V:
 </div>
 
 V:
-<!-- .slide: data-background-image="/Images/login.png" -->
+<!-- .slide: data-background-image="Images/login.png" -->
 
 <div style="background-color:#FFFFA6; text-align:center; vertical-align: bottom; padding: 0 0;">
 <b>- Login </b>
