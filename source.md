@@ -16,11 +16,11 @@
 		</p>
 </section>
 
-<link rel="stylesheet" href="css/theme/sky.css" id="theme">
-
+<!--<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+-->
 H:
 
-## Primera Presentación ecoFuturo
+## Presentación Final ecofuturo
 <!-- .slide: data-background="#73c990" -->
 <section data-background-image="Images/flecha.gif " data-background-size="10%" data-background-position="bottom">
 by  [Sebastian Chaves](https://github.com/adamantwharf) - [Laura Santos](https://github.com/lsfinite) - [Jimmy Pulido](https://github.com/jiapulidoar) - [Christian Sanabria](Inserte Link aquí :v )
@@ -42,20 +42,16 @@ H:
 
 # Presentación del proyecto
 
-¿Qué hago con este celular?<!-- .element: class="fragment" data-fragment-index="1"-->
-
-<img class="stretch" src="Images/nokia.jpg" width="40%"> </img><!-- .element: class="fragment" data-fragment-index="1"-->
-
 
 
 V:
 
 
-<!-- .slide: data-background="Images/colibri.jpg" -->
+<!-- .slide: data-background="/Images/colibri.jpg" -->
 
 
 <div style="background-color:#FFFFE6; text-align:center; vertical-align: middle; padding:2% 0;">
-<h3>Brieg Description</h3>
+<h3>Brief Description</h3>
 
 Plataforma con el fin de promover y enseñar la cultura del reciclaje en Colombia. Reconocer y proteger nuestro espacio.
 </div>
@@ -156,9 +152,7 @@ H:
 
 V:
 
-<!-- .slide: data-background-iframe="https://cristian1393.wixsite.com/ecofuturo" -->
-
-<div style="background-color:#FFFFFF; text-align:center; vertical-align: middle; padding:0 0;">
+<div style="background-color:#FFFFFF; text-align:center; vertical-align: middle; padding:2% 0;">
 <p>- Icon Menu </p>
  <p>- Search Box </p>
 <p>- Site </p>
@@ -166,7 +160,7 @@ V:
 
 V:
 
-<!-- .slide: data-background-image="Images/mapas.png" -->
+<!-- .slide: data-background-image="/Images/mapas.png" -->
 
 <div style="background-color:#FFFFE6; text-align:center; vertical-align: middle; padding:2% 0;">
 <b>- Mapa Navigator </b>
@@ -174,7 +168,7 @@ V:
 </div>
 
 V:
-<!-- .slide: data-background-image="Images/login.png" -->
+<!-- .slide: data-background-image="/Images/login.png" -->
 
 <div style="background-color:#FFFFA6; text-align:center; vertical-align: bottom; padding: 0 0;">
 <b>- Login </b>
@@ -192,3 +186,40 @@ H:
 H:
 ## Diagrama de clases
 <img src="Images/diaclases.png" >
+
+H:
+
+<!-- .slide: data-background="#8904B1" -->
+
+<h1> Web Development </h1>
+
+V:
+## MVC Pattern
+### Model View Controller
+> Es el patrón base utilizado para el desarrollo de la aplicación
+
+(software architectural pattern)
+
+
+
+V:
+##Don't repeat yourself!
+Ruby on Rails
+> - Simplicidad para el desarrollo de aplicaciones web
+> - Principiantes
+> - Realiza mucho del trabajo duro
+
+
+V:
+## Git + GitHub
+
+> Link del Proyecto: https://github.com/FutureUN/EcoFuturo2
+
+V:
+
+## Herramientas
+
+> Atom, Kate
+
+H:
+##Prototipo
